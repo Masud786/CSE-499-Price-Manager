@@ -117,3 +117,67 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-left {
+    flex-basis: 25%;
+}
+.header-right {
+    flex-grow: .7;
+}
+
+.form {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.form .input-select {
+    flex-basis: 20%;
+    border-radius: 40px 0px 0px 40px;
+}
+.form .input {
+    flex-basis: 55%;
+}
+.form .search-btn {
+    flex-basis: 15%;
+}
+
+@media (min-width: 418px) and (max-width: 767px) {
+    .header-logo .logo img {
+        width: 100px;
+        height: 70px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media all and (max-width: 417px) {
+    .form {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .form .input-select {
+        flex-basis: 30px;
+        border-radius: 40px 0px 0px 40px;
+    }
+    .form .input {
+        width: 220px;
+        flex-basis: 30px;
+        margin-right: -4px;
+    }
+    .header-logo .logo img {
+        width: 100px;
+        height: 70px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
